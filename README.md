@@ -7,7 +7,7 @@ We have implemented a web app to store a to-do list using a realtime database. Y
 1. Create a Cloudflare D1 database. We named ours "todo".
 2. Execute the following SQL commands to create the tables we need for our to-do list.
 
-```
+```sql
 CREATE TABLE categories (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT UNIQUE NOT NULL
