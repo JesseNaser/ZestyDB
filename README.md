@@ -6,7 +6,8 @@ We have implemented a web app to store a to-do list using a realtime database. Y
 
 1. Create a Cloudflare D1 database. We named ours "todo".
 2. Execute the following SQL commands to create the tables we need for our to-do list.
-```sql
+
+```
 CREATE TABLE categories (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT UNIQUE NOT NULL
@@ -22,6 +23,7 @@ CREATE TABLE tasks (
     FOREIGN KEY (category_id) REFERENCES categories(id)
 );
 ```
+
 3. Create a Cloudflare Worker. We named ours "todo".
 4. Set the D1 Database Binding for the Worker. We connected our "todo" database to the environment variable "TODO_DB".
 5. Insert the code into the worker. You can find our worker code [here](worker.js).
@@ -30,6 +32,9 @@ CREATE TABLE tasks (
 ### Creator Profiles
 
 ##### [Jesse Naser](jesse)
+
 ##### [Timothy Kosinski](timothy)
+
 ##### [Rory Jolliff](rory)
+
 ##### [George Ebaugh](george)
