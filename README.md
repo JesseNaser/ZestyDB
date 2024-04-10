@@ -45,7 +45,7 @@ You can view how each feature of the to-do list querys using SQL [here](sql).
 
 ### Video Walkthrough
 
-You can watch a video on how the to-do list works [here](https://www.youtube.com/watch).
+You can watch a video on how the to-do list works [here](https://www.youtube.com/watch?v=n-fwZSTcr_w).
 
 ### Creator Profiles
 
