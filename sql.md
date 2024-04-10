@@ -6,6 +6,8 @@ You can find our worker code [here](worker.js). The functions are located at the
 
 #### Default View
 
+- This is the default view which only shows past due or due-today tasks (before and upto today (entire day)). Tasks are sorted by priority (nulls at bottom of the table).
+
 ```sql
 SELECT 
   * 
@@ -20,6 +22,8 @@ ORDER BY
 ```
 
 #### Category View
+
+- This is a view showing only those tasks associated with a category. Ordered by priority first (nulls at bottom of table) and then due date.
 
 ```sql
 SELECT 
@@ -36,6 +40,8 @@ ORDER BY
 
 #### Completed View
 
+- This view only shows the completed tasks on that (entire) day. The tasks are sorted by due date.
+
 ```sql
 SELECT 
   * 
@@ -50,6 +56,8 @@ ORDER BY
 
 #### Everything View
 
+- Since the user must be able to see all the tasks, we have developed this view that shows all the tasks in that table.
+
 ```sql
 SELECT 
   * 
@@ -62,6 +70,8 @@ ORDER BY
 
 ### getAllCategories(env)
 
+- To display all the categories that exist, so the user can operate upon them.
+
 ```sql
 SELECT 
   * 
@@ -72,6 +82,8 @@ ORDER BY
 ```
 
 ### addTask(formData, env)
+
+- The user may add new tasks
 
 ```sql
 INSERT INTO tasks (
@@ -84,6 +96,8 @@ VALUES
 
 ### addCategory(formData, env)
 
+- The user may add new categories.
+
 ```sql
 INSERT INTO categories (name) 
 VALUES 
@@ -91,6 +105,8 @@ VALUES
 ```
 
 ### deleteTask(id, env)
+
+- The user may delete tasks.
 
 ```sql
 DELETE FROM 
@@ -100,6 +116,8 @@ WHERE
 ```
 
 ### updateTask(id, formData, env)
+
+- The user may update tasks.
 
 ```sql
 UPDATE 
@@ -116,6 +134,8 @@ WHERE
 
 ### updateCategory(id, formData, env)
 
+- The user may change a name of a category; since they are identified by Id.
+
 ```sql
 UPDATE 
   categories 
@@ -127,6 +147,8 @@ WHERE
 
 ### resetCategory(id, env)
 
+- We disassociate all of the tasks from this category.
+
 ```sql
 UPDATE 
   tasks 
@@ -137,6 +159,9 @@ WHERE
 ```
 
 ### deleteCategory(id, env)
+
+1. First: all of the tasks associated with this Category are deleted from their Tasks table.
+2. Second: We delete the category from its table.
 
 ```sql
 DELETE FROM 
