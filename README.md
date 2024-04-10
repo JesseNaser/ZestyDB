@@ -35,7 +35,9 @@ You can view the project description [here](projdesc).
 
 ### ERD
 
-You can view the Entity-Relationship Diagram [here](erd).
+You can view the Entity-Relationship Diagram below.
+
+![Entity-Relationship Diagram](erd.svg)
 
 ### SQL Walkthrough
 
