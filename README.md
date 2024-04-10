@@ -29,6 +29,22 @@ CREATE TABLE tasks (
 5. Insert the code into the worker. You can find our worker code [here](worker.js).
 6. Map the worker to a custom domain. You can find our worker running at [todo.zestydb.com](https://todo.zestydb.com).
 
+### Project Description
+
+You can view the project description [here](projdesc).
+
+### ERD
+
+You can view the Entity-Relationship Diagram [here](erd).
+
+### SQL Walkthrough
+
+You can view how each feature of the to-do list querys the sql [here](sql).
+
+### Video Walkthrough
+
+You can watch a video on how the to-do list works [here](https://www.youtube.com/watch).
+
 ### Creator Profiles
 
 ##### [Jesse Naser](jesse)
