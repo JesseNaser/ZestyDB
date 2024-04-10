@@ -39,7 +39,7 @@ You can view the Entity-Relationship Diagram [here](erd).
 
 ### SQL Walkthrough
 
-You can view how each feature of the to-do list querys the sql [here](sql).
+You can view how each feature of the to-do list querys using SQL [here](sql).
 
 ### Video Walkthrough
 
